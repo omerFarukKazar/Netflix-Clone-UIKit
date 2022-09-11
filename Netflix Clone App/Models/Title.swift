@@ -1,5 +1,5 @@
 //
-//  Tv.swift
+//  Movie.swift
 //  Netflix Clone App
 //
 //  Created by Ömer Faruk Kazar on 10.09.2022.
@@ -7,11 +7,11 @@
 
 import Foundation
 
-struct TrendingTvResponse: Codable {
-    let results: [Tv]
+struct TrendingTitleResponse: Codable {
+    let results: [Title]
 }
 
-struct Tv: Codable {
+struct Title: Codable {
     let id: Int
     let media_type: String?
     let original_title: String?
@@ -21,3 +21,5 @@ struct Tv: Codable {
     let release_date: String?
     let vote_average: Double
 }
+
+
